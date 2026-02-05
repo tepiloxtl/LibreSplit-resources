@@ -5,13 +5,13 @@ local enable = {}
 -- Version: currently only supporting Steam
 -- local version = "Steam"
 -- Split after every mission, comment out entry in missionList to disable splitting on that particular mission
-enable.missions = false
+enable.missions = true
 
 -- Split once you lose control on The Exchange
 enable.anyfinalsplit = false
 
 -- Split once you reach 100% game completion
-enable.hundofinalsplit = true
+enable.hundofinalsplit = false
 
 -- USJ autosplitter, values: false, "each", "all"
 enable.usjs = false
