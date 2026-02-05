@@ -122,6 +122,7 @@ end
 if enable.rampages != false then
     current.rampages = 0
 end
+current.gameState = 0
 
 
 function startup()
@@ -173,6 +174,7 @@ function state()
     if enable.rampages != false then
         current.rampages = readAddress("int", 0x35C0AC)
     end
+    current.gameState = readAddress("int", "0x505A2C")
 end
 
 function split()
