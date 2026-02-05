@@ -1,0 +1,1 @@
+GTA3 All Missions with icons.json uses [these](https://www.speedrun.com/gtaiii/resources/rqk50) icons. Download and unpack them somewhere, then find and replace `~~path~~` for your path to directory containing the icons
