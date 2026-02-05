@@ -5,13 +5,13 @@ local enable = {}
 -- Version: currently only supporting Steam
 -- local version = "Steam"
 -- Split after every mission, comment out entry in missionList to disable splitting on that particular mission
-enable.missions = true
+enable.missions = false
 
 -- Split once you lose control on The Exchange
 enable.anyfinalsplit = false
 
 -- Split once you reach 100% game completion
-elable.hundofinalsplit = false
+enable.hundofinalsplit = true
 
 -- USJ autosplitter, values: false, "each", "all"
 enable.usjs = false
@@ -26,7 +26,7 @@ enable.rampages = false
 local current = {}
 local old = {}
 if enable.missions == true then
-    local missionList = {
+    missionList = {
         {addr = 0x35B75C, label = "Luigi's Girls"},
         {addr = 0x35B76C, label = "Don't Spank Ma Bitch Up"},
         {addr = 0x35B770, label = "Drive Misty For Me"},
@@ -101,10 +101,10 @@ if enable.missions == true then
         {addr = 0x35B934, label = "Rumble"},
         {addr = 0x35B978, label = "Gripped!"}
     }
-    local missionCount = #missionList
+    missionCount = #missionList
     current.missionStates = {}
     old.missionStates = {}
-    local completedMissions = {}
+    completedMissions = {}
 end
 if enable.anyfinalsplit == true then
     current.teHelipad = 0
